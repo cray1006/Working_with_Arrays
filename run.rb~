@@ -7,8 +7,8 @@ end
 
 get '/years' do
 	# code!
-	@years = Array(1972..2013)
 	erb :years, layout: :main
+	@years = Array(1972..2013)
 end
 
 get '/states' do
