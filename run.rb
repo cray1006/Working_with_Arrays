@@ -1,3 +1,9 @@
+#Christopher Ray
+#Professor Arp
+#mgti40660
+#28 September 2015
+
+#run.rb
 require 'sinatra'
 
 get '/' do
@@ -13,5 +19,8 @@ end
 
 get '/states' do
   # code!
+  @states = ['Hawaii', 'California', 'Washington', 'Texas', 'Maine']
+  @states.sort
+  @states.sort!
   erb :states, layout: :main
 end
